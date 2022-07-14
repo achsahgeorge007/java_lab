@@ -1,4 +1,4 @@
-package mca.myapp.CO5.read_write;
+package mca.myapp.CO6.read_write;
 
 import java.io.FileWriter;
 import java.io.IOException;

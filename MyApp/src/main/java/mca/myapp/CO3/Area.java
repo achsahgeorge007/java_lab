@@ -51,24 +51,42 @@ class Rectangle implements Shape {
     }
 }
 
+class Square implements Shape {
+    Scanner sc = new Scanner(System.in);
+    int a;
+    public float area() {
+        System.out.print("Enter the side : ");
+        a = Integer.parseInt(sc.nextLine());
+        return (a * a);
+    }
+    public float perimeter() {
+        System.out.print("Enter the side : ");
+        a = Integer.parseInt(sc.nextLine());
+        return (4 * a);
+    }
+}
+
 class Area {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         Circle c = new Circle();
         Rectangle r = new Rectangle();
+        Square s = new Square();
         int ch;
         while (true) {
             System.out.println("1:Area of Circle");
             System.out.println("2:Perimeter of Circle");
             System.out.println("3:Area of Rectangle");
             System.out.println("4:Perimter of Rectangle");
-            System.out.println("5:EXIT");
+            System.out.println("5:Area of Square");
+            System.out.println("6:Perimter of Square");
+            System.out.println("7:EXIT");
             System.out.println("enter choice ");
             ch = Integer.parseInt(sc.nextLine());
             switch (ch) {
                 case 1:
                     float ar = c.area();
-                    System.out.println("Area  :" + ar);
+                    System.out.println("Area  : " + ar);
                     break;
                 case 2:
                     float pr = c.perimeter();
@@ -76,13 +94,21 @@ class Area {
                     break;
                 case 3:
                     float a = r.area();
-                    System.out.println("Area :" + a);
+                    System.out.println("Area : " + a);
                     break;
                 case 4:
                     float pr1 = r.perimeter();
                     System.out.println(pr1);
                     break;
                 case 5:
+                    float are = s.area();
+                    System.out.println("Area : " + are);
+                    break;
+                case 6:
+                    float pr2 = s.perimeter();
+                    System.out.println(pr2);
+                    break;
+                case 7:
                     System.out.println("Exiting the Program");
                     System.exit(0);
                 default:

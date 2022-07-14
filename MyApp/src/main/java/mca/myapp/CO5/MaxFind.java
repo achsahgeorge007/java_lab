@@ -1,6 +1,4 @@
-package mca.myapp.maxFinder;
-
-
+package mca.myapp.CO5;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -8,7 +6,7 @@ import java.awt.event.*;
 class MaxFind implements ActionListener {
 
     MaxFind() {
-        Frame maniFrame = new Frame();
+        Frame mainFrame = new Frame();
 
         Label L1 = new Label("NO 1");
         Label L2 = new Label("NO 2");
@@ -16,6 +14,7 @@ class MaxFind implements ActionListener {
         Label L4 = new Label("MAX NO");
 
         Button B1 = new Button("Submit");
+        Button B2 = new Button("Cancel");
 
         TextField T1 = new TextField();
         TextField T2 = new TextField();
@@ -32,17 +31,20 @@ class MaxFind implements ActionListener {
         T3.setBounds(250, 100, 80, 50);
         T4.setBounds(350, 100, 80, 50);
         B1.setBounds(150, 200, 80, 30);
+        B2.setBounds(250, 200, 80, 30);
+
 
         // Add componants to frame
-        maniFrame.add(B1);
-        maniFrame.add(L1);
-        maniFrame.add(L2);
-        maniFrame.add(L3);
-        maniFrame.add(L4);
-        maniFrame.add(T1);
-        maniFrame.add(T2);
-        maniFrame.add(T3);
-        maniFrame.add(T4);
+        mainFrame.add(B1);
+        mainFrame.add(B2);
+        mainFrame.add(L1);
+        mainFrame.add(L2);
+        mainFrame.add(L3);
+        mainFrame.add(L4);
+        mainFrame.add(T1);
+        mainFrame.add(T2);
+        mainFrame.add(T3);
+        mainFrame.add(T4);
 
         // Action events
         B1.addActionListener(new ActionListener() {
@@ -63,11 +65,16 @@ class MaxFind implements ActionListener {
                 T4.setText(Integer.toString(large));
             }
         });
-
-        maniFrame.setSize(600, 300);
-        maniFrame.setTitle("Max of 3 Numbers");
-        maniFrame.setLayout(null);
-        maniFrame.setVisible(true);
+        mainFrame.setSize(600, 300);
+        mainFrame.setTitle("Max of 3 Numbers");
+        mainFrame.setLayout(null);
+        mainFrame.setVisible(true);
+        
+        B2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            System.exit(0);
+            }
+        });
     }
 
     public static void main(String args[]) {

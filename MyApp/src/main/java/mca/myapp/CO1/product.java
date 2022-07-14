@@ -1,4 +1,3 @@
-
 package mca.myapp.CO1;
 public class product {
     String pcode;

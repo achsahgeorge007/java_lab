@@ -1,4 +1,4 @@
-package mca.myapp.CO5.odd_even;
+package mca.myapp.CO6.odd_even;
 
 import java.io.FileWriter;
 import java.io.IOException;
