@@ -1,13 +1,7 @@
 package mca.myapp.CO4;
 import java.util.*;
 
-class MyException extends Exception {
-    public MyException(String value) {
-        super(value);
-    }
-}
-
-class Main {
+class MyException {
     public static void main(String args[]) {
         int totalNums;
         int i;
@@ -25,9 +19,9 @@ class Main {
                     sum += temp;
                     count += 1;
                 } else {
-                    throw new MyException(Integer.toString(temp));
+                    throw new MyExceptions(Integer.toString(temp));
                 }
-            } catch (MyException ex) {
+            } catch (MyExceptions ex) {
                 System.out.print(ex.getMessage());
                 System.out.println(" - Not a positive number");
             }
@@ -41,3 +35,10 @@ class Main {
 
     }
 }
+
+class MyExceptions extends Exception {
+    public MyExceptions(String value) {
+        super(value);
+    }
+}
+

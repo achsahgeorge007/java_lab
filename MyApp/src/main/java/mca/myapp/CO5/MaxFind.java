@@ -56,10 +56,13 @@ class MaxFind implements ActionListener {
 
                 if (a >= b && a >= c) {
                     large = a;
+                    System.out.println("Maximum of three numbers is " + (large=a));
                 } else if (b >= a && b >= c) {
                     large = b;
+                    System.out.println("Maximum of three numbers is " + (large=b));
                 } else if (c >= a && c >= b) {
                     large = c;
+                    System.out.println("Maximum of three numbers is " + (large=c));
                 }
 
                 T4.setText(Integer.toString(large));
@@ -82,7 +85,5 @@ class MaxFind implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-
     }
-
 }

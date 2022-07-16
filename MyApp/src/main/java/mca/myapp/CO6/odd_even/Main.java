@@ -3,7 +3,7 @@ package mca.myapp.CO6.odd_even;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.File;
-import java.io.FileNotFoundException;
+//import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 class Main {
@@ -14,6 +14,7 @@ class Main {
         try {
             FileWriter oddFile = new FileWriter("odd.txt", true);
             FileWriter evenFile = new FileWriter("even.txt", true);
+            System.out.println("Files created for odd numbers and even numbers");
 
             Scanner dataRead = new Scanner(dataFile);
             while (dataRead.hasNextLine()) {
@@ -28,7 +29,6 @@ class Main {
                 //System.out.println(Integer.parseInt(i));
                 if (Integer.parseInt(i) % 2 == 0) {
                     evenFile.write(i+" ");
-
                 } else {
                     oddFile.write(i+" ");
                 }

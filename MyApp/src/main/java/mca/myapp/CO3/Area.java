@@ -1,7 +1,7 @@
 package mca.myapp.CO3;
 
 import java.util.*;
-import java.lang.*;
+//import java.lang.*;
 
 interface Shape {
     float pi = 3.14F;

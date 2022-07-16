@@ -14,15 +14,15 @@ class stringMenu {
         String sentannce = this.sentance;
         String[] arrOfStr = sentannce.split(" ");
 
-        //System.out.println("<- After split up ->");
-        //for (String a : arrOfStr)
-            //System.out.println(a);
+        System.out.println("<- After split up ->");
+        for (String a : arrOfStr)
+            System.out.println(a);
         
         
         Set<String> set = new HashSet<>(Arrays.asList(arrOfStr));
-        //System.out.println("<- After convert to set ->");
-        //for (String a : set)
-            //System.out.println(a);
+        System.out.println("<- After convert to set ->");
+        for (String a : set)
+            System.out.println(a);
 
         for(String each:set){
             int count=0;
@@ -91,6 +91,7 @@ class stringMenu {
             System.out.println("3) Count of each word");
             System.out.println("4) Replace word");
             System.out.println("5) Reverse each word ");
+            System.out.println("6) Exit");
     
             System.out.print("Option :: ");
             
@@ -115,6 +116,8 @@ class stringMenu {
                     System.out.println("Reverse each word");
                     Obj.reverse();
                     break;
+                case 6:
+                    System.exit(0);
                 default:
                 System.out.println("try another menu!");
                     

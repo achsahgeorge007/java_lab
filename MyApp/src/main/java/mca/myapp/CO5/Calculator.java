@@ -65,15 +65,19 @@ class Calculator implements ActionListener {
 
         if(e.getSource()==b1) {
             t3.setText(String.valueOf(n1 + n2));
+            System.out.println(n1 + " + " + n2 +" = " +(n1+n2));
         }
         if(e.getSource()==b2) {
             t3.setText(String.valueOf(n1 - n2));
+            System.out.println(n1 + " - " + n2 +" = " +(n1-n2));
         }
         if(e.getSource()==b3) {
             t3.setText(String.valueOf(n1 * n2));
+            System.out.println(n1 + " * " + n2 +" = " +(n1*n2));
         }
         if(e.getSource()==b4) {
             t3.setText(String.valueOf(n1 / n2));
+            System.out.println(n1 + " / " + n2 +" = " +(n1/n2));
         }
         if(e.getSource()==b5) {
             System.exit(0);

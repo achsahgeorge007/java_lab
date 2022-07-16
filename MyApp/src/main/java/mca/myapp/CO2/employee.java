@@ -18,6 +18,7 @@ class employee {
 
     public void display(){
         System.out.println("Name : "+ eName );
+        System.out.println("Salary :"+ eSalary);
     }
     public static void main(String []args){
         int i,n=3;

@@ -2,10 +2,10 @@ package mca.myapp.CO4;
 
 import java.util.*;
 
-class fibonacci implements Runnable {
+class FibonacciNo implements Runnable {
     int l;
 
-    fibonacci(int n) {
+    FibonacciNo(int n) {
         l = n;
     }
 
@@ -40,12 +40,12 @@ class even implements Runnable {
 
 }
 
-class Main {
+class fibonacci {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Limit :");
         int l = sc.nextInt();
-        fibonacci f = new fibonacci(l);
+        FibonacciNo f = new FibonacciNo(l);
         Thread T1 = new Thread(f);
         T1.start();
         even e = new even(l);

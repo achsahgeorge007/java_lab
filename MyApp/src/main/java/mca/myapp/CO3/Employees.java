@@ -1,6 +1,6 @@
 package mca.myapp.CO3;
 
-class Main {
+class Employees {
     public static void main(String[] args) {
        Teacher teacObj[] = new Teacher[2];
        teacObj[0] = new Teacher("1","A","AA",11,"AAA","AAAA");
@@ -10,13 +10,13 @@ class Main {
     }
 }
 
-class Employees {
+class Employee {
     String Empid;
     String Name;
     String Address;
     int Salary;
 
-    Employees(String id,String name,String addr,int salary){
+    Employee(String id,String name,String addr,int salary){
         this.Empid   = id;
         this.Name    = name;
         this.Address = addr;
@@ -30,9 +30,7 @@ class Employees {
     }
 }
 
-
-
-class Teacher extends Employees{  
+class Teacher extends Employee{  
     String Department;
     String Subject;
     Teacher(String id,String name,String addr,int salary,String dept,String subj){

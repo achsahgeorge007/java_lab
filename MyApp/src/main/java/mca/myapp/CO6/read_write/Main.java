@@ -25,6 +25,7 @@ class Main {
         // Write
         try {
             FileWriter dataWriter = new FileWriter("DATA2.txt");
+            System.out.println("Data read from file DATA.txt and copied in DATA2.txt");
             dataWriter.write(data);
             dataWriter.close();
         } catch (IOException ex) {

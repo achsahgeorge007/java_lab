@@ -2,7 +2,7 @@ package mca.myapp.CO4;
 
 import java.util.*;
 
-class Multiplication extends Thread {
+class Multiplications extends Thread {
     public void run() {
         System.out.println("\n\nMULTIPLICATION TABLE OF 5\n");
         for (int i = 1; i <= 10; i++) {
@@ -35,9 +35,9 @@ class Prime extends Thread {
     }
 }
 
-class Main {
+class Multiplication {
     public static void main(String args[]) {
-        Multiplication m = new Multiplication();
+        Multiplications m = new Multiplications();
         m.start();
         Prime p = new Prime();
         p.start();
